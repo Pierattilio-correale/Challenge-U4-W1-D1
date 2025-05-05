@@ -4,7 +4,11 @@ public class Esercizio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //esercuzio rettangolo
-double perimetroRett = perimetroRettangolo(10,7.5);
+        System.out.println("inserisci lunghezza rettangolo");
+        double l1 = scanner.nextDouble();
+        System.out.println("inserisci altezza rettangolo");
+        double l2 = scanner.nextDouble();
+double perimetroRett = perimetroRettangolo(l1,l2);
         System.out.println("il perimetro del rettangolo è? " + perimetroRett);
 
         //esercizio pari dispari
@@ -21,13 +25,13 @@ double perimetroRett = perimetroRettangolo(10,7.5);
         System.out.println("inserisci il primo lato del triangolo");
 
 
-        double l1= scanner.nextDouble();
+        double l4= scanner.nextDouble();
         System.out.println("inserisci il secondo lato del triangolo");
-        double l2= scanner.nextDouble();
+        double l5= scanner.nextDouble();
         System.out.println("inserisci il terzo lato del triangolo");
-        double l3= scanner.nextDouble();
+        double l6= scanner.nextDouble();
 
-        double areaTr = formulaErone(l1,l2,l3);
+        double areaTr = formulaErone(l4,l5,l6);
         System.out.println("l'area del triangolo è ? "+ areaTr);
 
         areaTr = formulaErone(10,12,14);
