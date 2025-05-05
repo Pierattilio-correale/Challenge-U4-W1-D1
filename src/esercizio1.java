@@ -1,13 +1,31 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class esercizio1 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         // esercizio moltiplicazione
-        int molt = moltiplicazione(5, 2);
+
+        System.out.println("inserisci primo operando");
+        int on1= scanner.nextInt();
+
+        System.out.println("inserisci il secondo operando");
+        int on2= scanner.nextInt();
+        scanner.nextLine();
+        int molt = moltiplicazione(on1, on2);
         System.out.println(molt);
+
+
 // esercizio concat
-        String concatenazione = concatena("benvenuti nel " , 2024);
+        System.out.println("inserisci la stringa ");
+        String on3 = scanner.nextLine() + " ";
+        System.out.println("inserisci l'intero");
+        int on4 = scanner.nextInt();
+        scanner.nextLine();
+
+        String concatenazione = concatena(on3 , on4);
         System.out.println(concatenazione);
+
     //  esercizio array
         String[] array = {"a", "b", "c", "d", "e"};
         String[] risultato = inserisciInArray(array, "terzoposto");

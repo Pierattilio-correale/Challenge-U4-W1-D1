@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class Esercizio3 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         //esercuzio rettangolo
 double perimetroRett = perimetroRettangolo(10,7.5);
         System.out.println("il perimetro del rettangolo è? " + perimetroRett);
@@ -15,7 +18,16 @@ double perimetroRett = perimetroRettangolo(10,7.5);
         System.out.println(pariDispari);
 
         //Esercizio formula di Erone
-        double areaTr = formulaErone(7,8,9);
+        System.out.println("inserisci il primo lato del triangolo");
+
+
+        double l1= scanner.nextDouble();
+        System.out.println("inserisci il secondo lato del triangolo");
+        double l2= scanner.nextDouble();
+        System.out.println("inserisci il terzo lato del triangolo");
+        double l3= scanner.nextDouble();
+
+        double areaTr = formulaErone(l1,l2,l3);
         System.out.println("l'area del triangolo è ? "+ areaTr);
 
         areaTr = formulaErone(10,12,14);
